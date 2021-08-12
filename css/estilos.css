@@ -1,0 +1,177 @@
+
+body {
+  font-family: 'Rubik', 'Roboto';
+  margin: 0;
+}
+
+h1, 
+h2
+{
+  font-family: 'Rubik', 'Roboto';
+  font-weight: bold;
+  /* font-style: italic; */
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1;  
+  font-weight: bold;
+}
+
+h1 strong {  
+  font-size: 70px;
+}
+
+h2 strong {  
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.gaming {
+  height: 800px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gaming div div {  
+  margin-left: 150px;
+  width: 345px;
+}
+
+.gaming div div p{
+  font-size: 18px;
+}
+
+.gaming-image{
+  object-fit: cover;
+  margin-right: 50px;
+}
+
+.button-purple {
+  background-color: #4857EC;
+  color: white;
+  width: 145px;
+  height: 35px;
+  border-radius: 3px;
+  border: none;   
+}
+
+.header {  
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.header div div {
+  margin-left: 150px;
+  /* margin-top: 80px; */
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 20px;
+  /* color: #000000; */
+  text-decoration: none;
+}
+
+.contact-url {
+  background-color: #4857EC;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: white;
+  
+}
+
+.container {
+  border: 1px solid red;
+  width: 1250px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.partners div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;  
+}
+
+.partners div img {
+  width: 100px;
+  height: 30px;
+}
+
+.features {
+  display: flex;
+}
+
+.features1 {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 250px;
+  margin-left: 148px;
+  margin-top: 89px;
+  margin-right: 172px;
+}
+
+.features2 {
+  /* border: 1px solid green; */
+  width: 352px;
+  height: 345px;
+  margin-right: 214px;
+  margin-top: 89px;  
+  margin-bottom: 90px;  
+}
+
+.container-features2 {
+  /* border: 1px solid maroon; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.icons-features {
+  width: 50px;
+  height: 50px;
+}
+
+.portfolio div h5, h2 {
+  text-align: center;
+}
+
+.portfolio-button {
+  border: 1px solid maroon;
+  justify-content: center;
+}
+
+.portfolio-images {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  justify-items: center;
+}
+
+.portfolio-images img {
+  width: 250px;
+  height: 300px;      
+}
+
