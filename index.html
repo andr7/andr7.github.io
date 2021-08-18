@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <title>Game Agency</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div>
-          <h1 >
+        <div class="logo">
+          <h3>
             Play_
-          </h1>
+          </h3>
         </div>
         <nav class="menu">
-          <ol>
+          <ul>
             <li>
               <a class="link" href="#">Home</a>
             </li>
@@ -31,7 +32,7 @@
             <li>
               <a class="contact-url" href="#">Contact Us</a>
             </li>
-          </ol>
+          </ul>
         </nav>
       </div>
     </header>
@@ -39,12 +40,12 @@
       <div class="container">
         <div>        
           <h1>
-            <strong>We design</strong> <br/> <strong>for games.</strong> <br/> 
-          </h1>
+            We design<br/> for games.
+          </h1><br>
           <p>Lorem ipsum dolor sit amet, consec
             tetur adipiscing elit, sed do eiusmod
             tempor incididunt.
-          </p>
+          </p><br>
           <button class="button-purple">
             Get started
           </button>
@@ -64,11 +65,11 @@
     <section class="features">
       <div class="container">
         <div class="features1">
-          <h5>FEATURES</h5>
+          <h5 class="subtitle-purple">FEATURES</h5><br>
           <h2>
-            <strong>What We are</strong><br>
-            <strong>offering</strong>
-          </h2>
+            What We are<br>
+            offering
+          </h2><br>
           <p>
             Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor.
           </p>
@@ -78,22 +79,22 @@
             <div>              
               <img class="icons-features" src="images/icon-computer.png" alt="" >              
               <h4>Website design</h4>
-              <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
             </div>
             <div>
               <img class="icons-features" src="images/icon-spaceship.png" alt="" >
               <h4>Website design</h4>
-              <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
             </div>
             <div>              
               <img class="icons-features" src="images/icon-like.png" alt="" >              
               <h4>Website design</h4>
-              <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
             </div>
             <div>
               <img class="icons-features" src="images/icon-reports.png" alt="" >
               <h4>Website design</h4>
-              <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
             </div>   
           </div>          
         </div>
@@ -101,23 +102,25 @@
     </section>
     <section class="portfolio">
       <div class="container">
-        <h5>PORTFOLIO</h5>        
+       <div class="portfolio-titles">
+        <h5 class="subtitle-purple">PORTFOLIO</h5>        
         <h2>Introducing our works</h2>
+       </div>
         <div class="portfolio-images">
           <div>
             <img src="images/valorant-WD.png" alt="">
-            <h3>Valorant Website Design</h3>
-            <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+            <h4>Valorant Website Design</h4>
+            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
           </div>
           <div>
             <img src="images/fortnite-GR.png" alt="">
-            <h3>Fortnite Game Reports</h3>
-            <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+            <h4>Fortnite Game Reports</h4>
+            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
           </div>
           <div>
             <img src="images/overwatch-SM.png" alt="">
-            <h3>Overwatch Social Media</h3>
-            <h6>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</h6>
+            <h4>Overwatch Social Media</h4>
+            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
           </div>
         </div>
         <div class="portfolio-button">
@@ -129,17 +132,27 @@
     </section>
     <section class="testimonial">
       <div class="container">
-        <h5>TESTIMONIAL</h5>        
-        <h3>What are they saying?</h3>
+        <div class="testimonial-titles">
+          <h5 class="subtitle-purple">TESTIMONIAL</h5>        
+          <h2>What are they saying?</h2>
+        </div>
         <div class="testimonial-section">          
-            <div class="card-testimonial">
+            <div class="card-testimonial1">
               <div class="card-testimonial-header">
-                <img class="card-testimonial-img" src="images/icon-happy1.png" alt="">
+                <div>
+                  <img class="card-testimonial-img" src="images/icon-happy1.png" alt="">
+                </div>
                 <div class="card-testimonial-titles">
                   <h5>Lorem Ipsum</h5>
                   <h6>CEO of Xxxx Games </h6>
                 </div>
-                <img class="card-testimonial-start" src="images/icon-stars.png" alt="">
+                <div class="card-testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
               <div class="card-testimonial-comment">
                 <p>
@@ -147,14 +160,22 @@
                 </p>
               </div>
             </div>
-            <div class="card-testimonial">
+            <div class="card-testimonial2">
               <div class="card-testimonial-header">
-                <img class="card-testimonial-img" src="images/icon-happy1.png" alt="">
+                <div>
+                  <img class="card-testimonial-img" src="images/icon-happy1.png" alt="">
+                </div>
                 <div class="card-testimonial-titles">
                   <h5>Lorem Ipsum</h5>
                   <h6>CEO of Xxxx Games </h6>
                 </div>
-                <img class="card-testimonial-start" src="images/icon-stars.png" alt="">
+                <div class="card-testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>                
               </div>
               <div class="card-testimonial-comment">
                 <p>
@@ -170,22 +191,24 @@
     </section>
     <section class="team">
       <div class="container">
-        <h5>TEAM</h5>        
-        <h2>Meet our team</h2>
+        <div class="team-titles">
+          <h5 class="subtitle-purple">TEAM</h5>        
+          <h2>Meet our team</h2>
+        </div>
         <div class="team-images">
           <div>
             <img src="images/samantha.png" alt="">
-            <h3>Samantha Rea</h3>
+            <h4>Samantha Rea</h4>
             <h6>Product Designer</h6>
           </div>
           <div>
             <img src="images/john.png" alt="">
-            <h3>John Doe</h3>
+            <h4>John Doe</h4>
             <h6>SEO Specialist</h6>
           </div>
           <div>
             <img src="images/sarah.png" alt="">
-            <h3>Sarah Jae</h3>
+            <h4>Sarah Jae</h4>
             <h6>Branding Specialist</h6>
           </div>
         </div>
@@ -227,12 +250,20 @@
           </div>
         </div>        
         <div class="social">
-          <a href="#" class="social-link ball"></a>
-          <a href="#" class="social-link facebook"></a>
-          <a href="#" class="social-link twitter"></a>
-          <a href="#" class="social-link youtube"></a>
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://linkdin.com">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://youtube.com">
+            <i class="fab fa-youtube"></i>
+          </a>
         </div>
-        <div>
+        <div class="game-analitycs">
           <p>© 2021 Game Analytics</p>
         </div>      
       </div>

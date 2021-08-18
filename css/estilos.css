@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Rubik', 'Roboto';
@@ -5,27 +10,78 @@ body {
   background: #F5F6FA;
 }
 
-h1, 
-h2
-{
-  font-family: 'Rubik', 'Roboto';
-  font-weight: bold;
-  /* font-style: italic; */
+a {
+  color: black;
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 32px;
-  line-height: 1;  
-  font-weight: bold;
-}
-
-h1 strong {  
   font-size: 70px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+h4{
+  font-size: 24px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 500;  
+}
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #98A1BB;
 }
 
-h2 strong {  
-  font-size: 48px;
-  font-weight: bold;
+p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+ul {  
+  list-style: none;
+}
+
+.logo h2{
+  font-size: 32px;
+  line-height: 25px;
+  font-weight: 900;
+}
+
+.menu {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;  
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 60px;
+}
+
+.button-purple {
+  background-color: #4857EC;
+  color: white;
+  width: 145px;
+  height: 45px;
+  border-radius: 3px;
+  border: none;  
 }
 
 .gaming {
@@ -35,9 +91,8 @@ h2 strong {
   justify-content: space-between;
 }
 
-.gaming div div {  
-  margin-left: 150px;
-  width: 345px;
+.gaming div div {    
+  width: 370px;  
 }
 
 .gaming div div p{
@@ -45,67 +100,47 @@ h2 strong {
 }
 
 .gaming-image{
-  object-fit: cover;
-  margin-right: 50px;
+  object-fit: cover;  
 }
 
-.button-purple {
+.button-purple2 {
   background-color: #4857EC;
   color: white;
-  width: 145px;
+  width: 100%;
   height: 35px;
+  line-height: 35px;
   border-radius: 3px;
-  border: none;  
+  border: none;
+  display: block;
 }
 
 .header {  
   display: flex;
-  height: 100px;
+  margin-top: 60px;
   align-items: center;
   justify-content: space-between;  
 }
 
-.header div div {
-  margin-left: 150px;  
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.header a {
-  display: flex;
-  align-items: center;
-  height: inherit;
-  padding: 0 20px;  
-  text-decoration: none;
-}
-
-.header ol {
-  display: flex;
-  height: inherit;
-}
-
-
 .contact-url {
   background-color: #4857EC;
   border-radius: 3px;
-  padding: 10px 20px;
+  padding: 13px 25px;
   color: white;  
 }
 
 .container {
   /* border: 1px solid red; */
-  width: 1250px;
-  margin: 0 auto;
+  width: 75%;
+  margin: auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;  
+}
+
+.subtitle-purple {
+  color: #4857EC;
 }
 
 .partners div {
@@ -125,152 +160,194 @@ ul {
 }
 
 .features1 {  
-  width: 300px;
-  height: 250px;
-  margin-left: 148px;
+  height: 250px;  
   margin-top: 89px;
   margin-right: 172px;
 }
 
-.features2 {  
-  width: 352px;
-  height: 345px;
-  margin-right: 214px;
-  margin-top: 89px;
-  margin-bottom: 90px;
+.features2 {
+  margin-top: 89px;  
 }
 
 .container-features2 {  
   display: grid;
   grid-template-columns: 50% 50%;
+  min-height: 380px;  
+  min-width: 500px;
+}
+
+.portfolio-titles {
+  text-align: center;
+  margin-top: 124px;
+  margin-bottom: 83px;
 }
 
 .icons-features {
   width: 50px;
   height: 50px;
+  margin-bottom: 10px;
 }
 
 .portfolio-button {
   text-align: center;
+  margin: 75px 0;
 }
 
 .portfolio-images {  
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 43px;  
 }
 
 .portfolio-images img {
-  width: 250px;
-  height: 300px;      
+  width: 100%;
+  height: 419px;
+  margin-bottom: 23px;
 }
 
-.testimonial-section {
-  margin-left: 100px;
+.testimonial-titles {
+  margin-top: 120px;
+  margin-bottom: 95px;
+}
+
+.testimonial-section {  
   display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  gap: 3em;
-  /* grid-auto-rows: minmax(auto, auto); */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 37px; 
 }
 
-.testimonial-section > div {
-  background: white;
-}
-
-.card-testimonial{
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+.testimonial-section div{  
   padding: 5px;
-  align-items: start;
+  align-items: center;
+  background: white;
+  border-radius: 7px;  
+}
+
+.card-testimonial1 {
+  grid-column: 1/3;
+}
+.card-testimonial2 {
+  grid-column: 3/5;
 }
 
 .card-testimonial-header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   align-items: center;  
 }
 
 .card-testimonial-img {
   justify-self: center;  
 }
+.card-testimonial-titles{
+  grid-column: 2/5;
+}
+.card-testimonial-titles h5{
+  font-size: 18px;
+  color: black;
+  text-align: left;
+}
+.card-testimonial-titles h6{
+  font-size: 16px;
+  color: #98A1BB;
+  text-align: left;
+}
 .card-testimonial-comment p{
-  font-size: 12px;
+  font-size: 16px;
+}
+.card-testimonial-stars {
+  grid-column: 5/7;
+  text-align: end;
+}
+.card-testimonial-stars i {
+  font-size: 10px;
+  color: #F9C94E;
 }
 
-.card-testimonial-start {
-  justify-self: end;  
-}
 .link-view-all {
   text-align: center;
   margin: 30px 0;
+  margin-top: 84px;
+  margin-bottom: 143px;  
 }
 
 .link-view-all a{
   text-decoration: none;
+  color: #4857EC;
+}
+
+.team-titles {
+  margin-top: 25px;
+  margin-bottom: 59px;
 }
 
 .team-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  justify-items: center;
+  gap: 48px;
 }
 .team-images div img {
-  width: 300px;
-  height: 370px;
+  width: 100%;
+  height: 419px;
 }
-.team-images div h3, h6 {
+
+.team-images div h4, h6 {
   text-align: center;
+}
+
+.team-images div h4 {
+  margin-top: 23px;
+  margin-bottom: 4px;
 }
 
 .footer-elements {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1em;
+  margin-top: 140px;
+  min-height: 210px;
+}
+
+.footer-elements div h5 {
+  color: #AAB2C8;
+  margin-top: 19px;
+}
+
+.game-analitycs {
+  margin: 70px 0;
+  color: #8A94A6;
 }
 
 .element1 {
   grid-column: 1/3;
   font-size: 20px;
-  font-weight: bold;
-  /* margin-left: 35px; */
+  font-weight: bold;  
 }
 
-/* .social {
-  border: 1px solid green;
-  width: auto;
-  height: 100px;
-} */
-
-.social-link {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin: 0 10px;
-  /* margin-left: 35px; */
-  background-size: 18px 18px;
-}
-
-.social-link.ball {
-  background-image: url('../images/icon-ball.png');
-}
-.social-link.facebook {
-  background-image: url('../images/icon-facebook.png');
-}
-.social-link.twitter {
-  background-image: url('../images/icon-twitter.png');
-}
-.social-link.youtube {
-  background-image: url('../images/icon-youtube.png');
+.social a i {
+  font-size: 28px;
+  margin-right: 40px;
+  color: #B0B7C3;
 }
 
 .pricing-titles {
   text-align: center;
+  margin-top: 58px;
+  margin-bottom: 28px;
+}
+
+.pricing-titles h5 {
+  color: #98A1BB;
 }
 
 .bill {  
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+}
+
+.bill h5 {
+  color: #98A1BB;
 }
 
 .switch {
@@ -315,25 +392,62 @@ input:checked + .slider:before {
   transform: translateX(35px);
 }
 
-.checkbox-group {
-  display: grid;
-}
-
-.checkbox-group > label {
-  font-size: 12px;
-}
-
 .plans {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em;   
-  padding: 20px;
+  gap: 50px;  
   justify-items: center;
+  margin: 60px;
 }
 
 .plans > div {
   background: white;
   margin: 0 auto;
-  width: 200px;
-  padding: 15px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.plans h3 {
+  font-size: 30px;
+}
+
+.plans-list {
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.plans-list div {
+  display: flex;
+  align-items: baseline;
+}
+
+.plans-list div p {
+  color: #8A94A6;
+}
+
+.plans-list i{
+  font-size: 20px;
+  color: #4857EC;
+  margin-right: 10px;
+}
+
+.plans-element1 h3 {
+  color: #F9C94E;
+}
+.plans-element2 h3 {
+  color: #4857EC;
+}
+.plans-element3 h3 {
+  color: #2FEFB1;
+}
+
+.plans-titles {
+  margin-bottom: 40px;
+}
+
+.plans-titles h5 {
+  color: #8A94A6;
 }
