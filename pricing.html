@@ -137,6 +137,19 @@
   </section>
 
   <!-- Scroll Reveal -->
-  <script src="main.js"></script>
+  <script>
+    document.querySelector(".menu-btn").addEventListener('click', () => {
+      if (document.querySelector(".nav-menu").classList.contains("show")){
+        document.querySelector(".nav-menu").classList.remove("show");
+      }else{
+        document.querySelector(".nav-menu").classList.add("show");
+      }
+    });
+    document.querySelector(".plans-and-pricing").addEventListener('click', () => {
+      if (document.querySelector(".nav-menu").classList.contains("show")){
+        document.querySelector(".nav-menu").classList.remove("show");
+      }
+    });
+  </script>
 </body>
 </html>

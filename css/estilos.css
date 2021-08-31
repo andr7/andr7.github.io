@@ -100,7 +100,7 @@ ul {
 }
 
 .gaming-description {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,6 +165,10 @@ ul {
 
 .features {
   display: flex;
+}
+
+.features1 {    
+  width: 70%;
 }
 
 .features-grid {
@@ -275,9 +279,7 @@ ul {
 
 .link-view-all {
   text-align: center;
-  margin: 30px 0;
-  margin-top: 84px;
-  margin-bottom: 143px;
+  margin: 66px 0 107px;  
 }
 
 .link-view-all a {
@@ -309,6 +311,11 @@ ul {
   margin-bottom: 4px;
 }
 
+.footer{
+  background: white;
+  padding: 90px 0;
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -325,22 +332,13 @@ ul {
   line-height: 2;
 }
 
-/* .footer-links ul, li {  
-  margin-top: 19px;
-} */
-
 .footer-links li a {
   color: #AAB2C8;
 }
 
-/* .footer-elements div h5 {
-  color: #AAB2C8;
-  margin-top: 19px;
-} */
-
-.game-analitycs {
-  margin: 60px 0;
+.game-analitycs {  
   color: #8A94A6;
+  padding-top: 30px;
 }
 
 .element1 {
@@ -565,6 +563,12 @@ input:checked+.slider:before {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .gaming-description {
+    width: 100%;
+  }
+  .features1 {
+    width: 100%;
+}
   .partners-grid{    
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -590,9 +594,6 @@ input:checked+.slider:before {
   }
   .link-view-all {
     margin-bottom: 100px;
-  }
-  .social a i {
-    margin-right: 30px;
   }
 }
 
@@ -647,4 +648,7 @@ input:checked+.slider:before {
   .social a i {
     margin-right: 15px;
   }
+  .logo-footer {
+    margin: 0;
+}
 }
