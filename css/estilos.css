@@ -616,9 +616,6 @@ input:checked+.slider:before {
   h6{
     font-size: 12px;
   }
-  p {
-    font-size: 16px;
-  }
   .nav-main ul.nav-menu{
     width: 310px;
   }
