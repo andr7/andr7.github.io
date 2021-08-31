@@ -1,9 +1,57 @@
-document.querySelector(".menu-btn").addEventListener("click", () => {
-  document.querySelector(".nav-menu").classList.toggle("show");
+// document.querySelector(".menu-btn").addEventListener("click", () => {
+//   document.querySelector(".nav-menu").classList.toggle("show");
+// });
+
+const menuBtn = document.querySelector(".menu-btn");
+const navMenu = document.querySelector(".nav-menu");
+
+menuBtn.addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }else{
+    navMenu.classList.add("show");
+  }
 });
 
-ScrollReveal().reveal('.showcase');
-ScrollReveal().reveal('.news-cards', { delay: 500 });
-ScrollReveal().reveal('.cards-banner-one', { delay: 500 });
-ScrollReveal().reveal('.cards-banner-two', { delay: 500 });
+document.querySelector(".gaming").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
 
+document.querySelector(".partners").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
+
+document.querySelector(".features").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
+
+document.querySelector(".portfolio").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
+
+document.querySelector(".testimonial").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
+
+
+document.querySelector(".team").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
+
+document.querySelector(".footer").addEventListener('click', () => {
+  if (navMenu.classList.contains("show")){
+    navMenu.classList.remove("show");
+  }
+});
